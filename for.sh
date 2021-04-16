@@ -21,3 +21,4 @@ else
 echo "Smaller"
 fi
 done
+echo test
