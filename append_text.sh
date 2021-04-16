@@ -1,9 +1,12 @@
 #!/bin/bash
 
-touch $1
-if [ ! -f "pwd/$1" ]
+
+if [ ! -f "$1" ];
 then
-echo "File alredy exists"
+echo "File does not exists"
+cat >> $1
 else
-cat > $1
+echo "File exits"
+touch $1
+cat >> $1
 fi
